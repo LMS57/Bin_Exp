@@ -1,6 +1,8 @@
 *.py
+*.swp
 notes
 backup
 core
 test.c
 input
+.*

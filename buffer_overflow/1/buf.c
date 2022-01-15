@@ -14,6 +14,8 @@ int win(){
 int main(){
 	int x = 0;
 	char c[10];
+	setvbuf(stdin, 0, 2, 0);
+	setvbuf(stdout, 0, 2, 0);
 	printf("What is your name?\n");
 	scanf("%s", c);
 	if(x == 0x1337c0de)

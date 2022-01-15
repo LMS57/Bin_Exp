@@ -8,6 +8,10 @@
 
 int main(){
 
+	setvbuf(stdin, 0, 2, 0);
+	setvbuf(stdout, 0, 2, 0);
+
+
 	int a = open("/etc/passwd",0);
 	int b = open("flag.txt", 0);
 	char c[50];

@@ -15,6 +15,8 @@ void win(){
 
 int main(){
 	srand(time(0));
+	setvbuf(stdin,0,2,0);
+	setvbuf(stdout,0,2,0);
 	int guess = rand();
 	int *guess_loc = &guess;
 	char buf[10];

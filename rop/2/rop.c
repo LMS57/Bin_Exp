@@ -6,7 +6,7 @@ int main(){
 	setvbuf(stdin,0,2,0);
 	setvbuf(stdout,0,2,0);
 	puts("Good Luck!");
-	gets(buf);
+	read(0,buf,500);
 	__printf_chk(1,buf);
 	
 }

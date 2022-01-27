@@ -14,6 +14,7 @@ void seccomp(){
     ALLOW_SYSCALL(exit),
     ALLOW_SYSCALL(exit_group),
     ALLOW_SYSCALL(mprotect),
+	ALLOW_SYSCALL(prctl),
 	KILL_PROCESS
 	};
 

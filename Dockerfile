@@ -1,4 +1,4 @@
-FROM debian
+FROM docker.io/library/debian@sha256:2906804d2a64e8a13a434a1a127fe3f6a28bf7cf3696be4223b06276f32f1f2d
 
 RUN apt-get update -y && apt-get install xinetd -y
 

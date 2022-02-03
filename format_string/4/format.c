@@ -7,12 +7,6 @@
 #include <fcntl.h>
 #include <time.h>
 
-void win(){
-	int fd = open("./flag.txt", 0);
-	sendfile(1,fd,0,100);
-	return;
-}
-
 int main(){
 	srand(time(0));
 	setvbuf(stdin,0,2,0);

@@ -8,6 +8,7 @@ ADD ./buffer_overflow /chall/buffer_overflow
 ADD ./format_string /chall/format_string
 ADD ./rop /chall/rop
 ADD ./type_confusion /chall/type_confusion
+ADD ./heap /chall/uheap
 
 #ADD chall.sh /chall
 ADD setup.sh /bin/setup.sh

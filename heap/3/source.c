@@ -14,7 +14,7 @@ void edit(int index, int size){
 	printf("What data would you like to put there?\n> ");
 	char *ptr = chunks[index];
 	read(0,ptr,size);
-	ptr[size+1] = 0;
+	ptr[size] = 0;
 }
 
 void create(){

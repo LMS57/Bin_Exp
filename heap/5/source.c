@@ -20,7 +20,10 @@ void edit(int index, int size){
 	printf("What data would you like to put there?\n> ");
 	char *ptr = chunks[index];
 	if (size == 0)
-		size = strlen(ptr);
+	{
+		printf("How much data?\n> ");
+		scanf("%d", &size);
+	}
 	read(0,ptr,size);
 }
 
@@ -50,6 +53,7 @@ void delete(){
 		return;
 
 	free(chunks[index]);
+	chunks[index] = 0;
 
 }
 

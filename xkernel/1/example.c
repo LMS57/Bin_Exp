@@ -51,17 +51,17 @@ static ssize_t example_read(struct file *filp, char __user *buf, size_t len, lof
 static ssize_t example_write(struct file *filp, const char __user *buf, size_t len, loff_t *f_pos){
 	char buf2[100];
 	copy_from_user(buf2, buf,100); 
-	printk(6, "You sent in %s\n", buf2);
+	pr_info("You sent in %s\n", buf2);
     return 0x1337;
 }
 
 static int example_open(struct inode *inodep, struct file *filp){
-	printk(0, "Device Opened\n");
+	pr_info("Device Opened\n");
     return 0;
 }
 
 static int example_close(struct inode *inodep, struct file *filp){
-	printk(1, "Device Closed\n");
+	pr_info("Device Closed\n");
     pr_info("Goodbye from kernel~\n");
     return 0;
 }

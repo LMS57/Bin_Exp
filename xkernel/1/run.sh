@@ -1,9 +1,9 @@
 #!/bin/bash
 
 qemu-system-x86_64 \
-  -kernel ./vmlinux \
+  -kernel ./bzImage \
   -initrd ./initramfs.cpio.gz \
-  -append "console=ttyS0 kaslr panic=-1" \
+  -append "console=ttyS0 kaslr kaslr panic=-1" \
   -monitor none \
   -nographic \
   -no-reboot \
